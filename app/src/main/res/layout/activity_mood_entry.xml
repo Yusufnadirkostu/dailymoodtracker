@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="16dp">
+
+    <TextView android:text="Nasıl hissediyorsun?" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="18sp"/>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnHappy" android:text="😊" android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnSad" android:text="😢" android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnAngry" android:text="😠" android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText android:id="@+id/etNote" android:hint="Bugünle ilgili bir şeyler yaz..."
+        android:layout_width="match_parent" android:layout_height="150dp"/>
+
+    <Button android:id="@+id/btnSave" android:text="Kaydet"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
